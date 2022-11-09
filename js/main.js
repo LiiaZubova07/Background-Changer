@@ -1,4 +1,5 @@
 const button = document.getElementById('btn');
+const color = document.querySelector('.color');
 
 const colors = [
   '#ff5733',
@@ -12,7 +13,9 @@ const colors = [
 button.addEventListener('click', () => {
 //   console.log('click');
 //   console.log (getRandomColor());
-document.body.style.backgroundColor = colors[getRandomColor()];
+let hexColor = colors[getRandomColor()];
+document.body.style.backgroundColor = hexColor;
+color.textContent = hexColor;
 });
 
 function getRandomColor() {
