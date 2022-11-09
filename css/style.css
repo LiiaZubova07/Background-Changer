@@ -91,6 +91,7 @@ h6 {
 /*--------------------*/
 
 body {
+	font-family: 'Roboto', sans-serif;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -98,11 +99,36 @@ body {
 	background-color: #f1f5f8;
 }
 
+.container {
+	text-align: center;
+}
+
 .container h2 {
 background-color: #222;
 padding: 20px;
 border-radius: 10px;
-color: fffff;
+color: #ffffff;
 font-size: 32px;
 margin-bottom: 24px;
+}
+
+.color {
+	color: #49a6e9;
+}
+
+.btn {
+	background-color: transparent;
+	padding: 8px;
+	border: 2px solid #222;
+	border-radius: 5px;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	color: #222;
+	cursor: pointer;
+}
+
+.btn:hover {
+background-color: #222;
+color: #ffffff;
+transition: all 0.250s ease-in;
 }
